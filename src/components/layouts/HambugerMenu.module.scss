@@ -1,0 +1,42 @@
+@import 'assets/styles/vars.scss';
+
+.hambugerMenuWrapper {
+    position: relative;
+
+    .hambugerMenuToogle {
+        cursor: pointer;
+    }
+
+    .hambugerMenu {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: absolute;
+        left: -255px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+            transition-delay: 0s;
+        }
+
+        .hambugerMenuItem {
+            cursor: pointer;
+            width: 280px;
+            height: 72px;
+            color: $color-light;
+            background-color: $color-gray-400;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 0 32px;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                background-color: $color-primary-400;
+            }
+        }
+    }
+}

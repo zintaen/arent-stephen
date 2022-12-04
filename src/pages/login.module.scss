@@ -1,0 +1,39 @@
+.backgroundVideo {
+    height: 100%;
+    width: 100%;
+    float: left;
+    top: 0;
+    padding: 0;
+    position: fixed;
+    object-fit: cover;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+
+    .logo {
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100vh;
+            margin-right: 8px;
+        }
+    }
+
+    .rememberMe {
+        color: white;
+    }
+
+    .loginBtn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,145 @@
+@import 'assets/styles/vars.scss';
+
+.container {
+    padding: 120px $default-padding-x;
+
+    .recommendCards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 48px;
+    }
+
+    .bodyRecord {
+        margin-top: 56px;
+        background-color: $color-dark-500;
+        padding: 16px 24px;
+        display: flex;
+        flex-direction: column;
+        color: $color-light;
+
+        .titleWrapper {
+            display: flex;
+            font-family: Inter;
+
+            .title {
+                font-size: 15px;
+                width: 90px;
+            }
+
+            .datetime {
+                font-size: 22px;
+                flex: 1;
+            }
+        }
+
+        .content {
+            margin-top: 10px;
+        }
+    }
+
+    .myExercise {
+        margin-top: 56px;
+        background-color: $color-dark-500;
+        padding: 16px 24px;
+        display: flex;
+        flex-direction: column;
+        color: $color-light;
+
+        .titleWrapper {
+            display: flex;
+            font-family: Inter;
+
+            .title {
+                font-size: 15px;
+                width: 90px;
+            }
+
+            .datetime {
+                font-size: 22px;
+                flex: 1;
+            }
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 40px;
+            row-gap: 10px;
+            max-height: 200px;
+            overflow: auto;
+            margin-top: 10px;
+            padding: 0 50px 0 15px;
+
+            .exercise {
+                flex-direction: column;
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .name {
+                        font-size: 15px;
+                    }
+
+                    .duration {
+                        font-family: Inter;
+                        font-size: 18px;
+                        color: $color-primary-300;
+                    }
+                }
+
+                .calories {
+                    font-family: Inter;
+                    font-size: 15px;
+                    color: $color-primary-300;
+                    border-bottom: 1px solid $color-gray-400;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .myDiaryTitle {
+        margin-top: 56px;
+        margin-bottom: 10px;
+        font-family: Inter;
+        font-size: 22px;
+        color: $color-dark-500;
+    }
+
+    .myDiary {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 12px;
+        row-gap: 12px;
+
+        .diary {
+            aspect-ratio: 1;
+            background-color: $color-light;
+            border: 2px solid #707070;
+            color: $color-dark-500;
+            padding: 15px;
+
+            .date {
+                font-family: Inter;
+                font-size: 18px;
+            }
+
+            .time {
+                font-family: Inter;
+                font-size: 18px;
+            }
+
+            .text {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .loadMore {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 64px;
+    }
+}

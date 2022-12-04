@@ -1,0 +1,17 @@
+@import 'assets/styles/vars.scss';
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $color-gray-400;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color-primary-300;
+    border-radius: 3px;
+}

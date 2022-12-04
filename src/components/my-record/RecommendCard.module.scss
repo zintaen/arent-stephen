@@ -1,0 +1,39 @@
+@import 'assets/styles/vars.scss';
+
+.container {
+    aspect-ratio: 1;
+    background-color: $color-dark-600;
+    border: 24px solid $color-primary-300;
+    position: relative;
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        opacity: 0.25;
+    }
+
+    .description {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .title {
+            font-family: Inter;
+            font-size: 25px;
+            color: $color-primary-300;
+        }
+
+        .content {
+            margin-top: 10px;
+            font-size: 14px;
+            color: $color-light;
+            background-color: $color-primary-400;
+            padding: 3px 5px;
+        }
+    }
+}

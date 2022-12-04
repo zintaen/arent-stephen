@@ -1,0 +1,14 @@
+@import 'assets/styles/vars.scss';
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 128px;
+    background-color: $color-dark-500 !important;
+    padding: 0 $default-padding-x !important;
+
+    .link {
+        color: $color-light;
+        margin-right: 45px;
+    }
+}

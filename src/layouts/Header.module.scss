@@ -1,0 +1,38 @@
+@import 'assets/styles/vars.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-dark-500 !important;
+    padding: 0 $default-padding-x !important;
+
+    .logo {
+        height: 40px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        .menuItemLink {
+            color: $color-light;
+            position: relative;
+            margin-right: 40px;
+            display: flex;
+
+            &:hover,
+            &.active {
+                color: $color-primary-400;
+            }
+
+            .menuItemIcon {
+                margin-right: 12px;
+            }
+
+            .menuItemBadge {
+                border-color: $color-primary-400;
+            }
+        }
+    }
+}
