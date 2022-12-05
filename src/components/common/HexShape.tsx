@@ -11,7 +11,6 @@ export interface HexShapeProps {
 const HexShape: FC<HexShapeProps> = ({ icon, label }) => {
     return (
         <div className={styles.container}>
-            <div className={styles.hex} />
             <div className={styles.content}>
                 <Image className={styles.icon} src={icon} preview={false} />
                 <div className={styles.label}>{label}</div>

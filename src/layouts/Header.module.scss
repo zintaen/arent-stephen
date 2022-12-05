@@ -16,10 +16,10 @@
         align-items: center;
 
         .menuItemLink {
-            color: $color-light;
+            display: flex;
             position: relative;
             margin-right: 40px;
-            display: flex;
+            color: $color-light;
 
             &:hover,
             &.active {

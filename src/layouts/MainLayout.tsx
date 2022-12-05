@@ -1,9 +1,10 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { Layout, FloatButton } from 'antd';
+import { Layout } from 'antd';
 
 import Header from 'layouts/Header';
 import Footer from 'layouts/Footer';
+import ScrollToTop from 'components/common/ScrollToTop';
 
 const MainLayout = () => {
     return (
@@ -11,7 +12,7 @@ const MainLayout = () => {
             <Header />
             <Layout.Content>
                 <Outlet />
-                <FloatButton.BackTop style={{ right: 20, bottom: 20 }} />
+                <ScrollToTop />
             </Layout.Content>
             <Footer />
         </Layout>

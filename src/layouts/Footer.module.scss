@@ -3,12 +3,12 @@
 .footer {
     display: flex;
     align-items: center;
-    height: 128px;
     background-color: $color-dark-500 !important;
     padding: 0 $default-padding-x !important;
+    height: 128px;
 
     .link {
-        color: $color-light;
         margin-right: 45px;
+        color: $color-light;
     }
 }

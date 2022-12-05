@@ -5,14 +5,14 @@
         display: flex;
 
         .rate {
-            flex: 40%;
             position: relative;
+            flex: 40%;
 
             .image {
+                background-position: center;
+                background-size: cover;
                 width: 100%;
                 height: 100%;
-                background-size: cover;
-                background-position: center;
             }
 
             .percent {
@@ -37,25 +37,25 @@
     }
 
     .inputs {
-        margin-top: 56px;
-        padding: 0 $default-padding-x;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
+        margin-top: 56px;
+        padding: 0 $default-padding-x;
     }
 
     .history {
-        margin-top: 56px;
-        padding: 0 $default-padding-x;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 8px;
         row-gap: 8px;
+        margin-top: 56px;
+        padding: 0 $default-padding-x;
     }
 
     .loadMore {
-        text-align: center;
         margin-top: 30px;
         margin-bottom: 64px;
+        text-align: center;
     }
 }

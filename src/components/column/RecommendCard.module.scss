@@ -1,29 +1,29 @@
 @import 'assets/styles/vars.scss';
 
 .container {
-    background-color: $color-dark-600;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $color-dark-600;
     padding: 24px 8px;
     min-height: 144px;
 
     .title {
-        font-family: Inter;
-        font-size: 22px;
         color: $color-primary-300;
+        font-size: 22px;
+        font-family: Inter;
         text-align: center;
     }
 
     .seperator {
+        margin: 10px 0;
         width: 56px;
         color: $color-light;
-        margin: 10px 0;
     }
 
     .content {
-        font-size: 18px;
         color: $color-light;
+        font-size: 18px;
     }
 }

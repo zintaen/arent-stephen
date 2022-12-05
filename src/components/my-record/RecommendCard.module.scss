@@ -1,39 +1,39 @@
 @import 'assets/styles/vars.scss';
 
 .container {
-    aspect-ratio: 1;
-    background-color: $color-dark-600;
-    border: 24px solid $color-primary-300;
     position: relative;
+    border: 24px solid $color-primary-300;
+    background-color: $color-dark-600;
+    aspect-ratio: 1;
 
     .image {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
         opacity: 0.25;
+        height: 100%;
     }
 
     .description {
         position: absolute;
-        left: 50%;
         top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
 
         .title {
-            font-family: Inter;
-            font-size: 25px;
             color: $color-primary-300;
+            font-size: 25px;
+            font-family: Inter;
         }
 
         .content {
             margin-top: 10px;
-            font-size: 14px;
-            color: $color-light;
             background-color: $color-primary-400;
             padding: 3px 5px;
+            color: $color-light;
+            font-size: 14px;
         }
     }
 }
