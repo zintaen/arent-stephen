@@ -1,5 +1,6 @@
 import React from 'react';
 import { useQuery } from 'react-query';
+import cn from 'classnames';
 
 import { IExercise, IDiary } from 'types';
 import { BASE_API_URL } from 'components/common/constants';
@@ -53,6 +54,12 @@ const MyRecord = () => {
                 </div>
                 <div className={styles.content}>
                     <Chart />
+                    <div className={styles.buttons}>
+                        <button className={styles.button}>日</button>
+                        <button className={styles.button}>週</button>
+                        <button className={styles.button}>月</button>
+                        <button className={cn(styles.button, styles.active)}>年</button>
+                    </div>
                 </div>
             </div>
             <div className={styles.myExercise}>

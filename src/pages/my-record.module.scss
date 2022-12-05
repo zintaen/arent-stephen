@@ -34,6 +34,28 @@
 
         .content {
             margin-top: 10px;
+
+            .buttons {
+                display: flex;
+                margin-top: 20px;
+
+                .button {
+                    cursor: pointer;
+                    margin-right: 16px;
+                    border: none;
+                    border-radius: 11px;
+                    background-color: $color-light;
+                    width: 56px;
+                    height: 24px;
+                    color: $color-primary-300;
+
+                    &.active,
+                    &:hover {
+                        background-color: $color-primary-300;
+                        color: $color-light;
+                    }
+                }
+            }
         }
     }
 

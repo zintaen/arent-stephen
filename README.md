@@ -1,3 +1,9 @@
+# Ports
+
+API: 3001
+
+Web: 3000
+
 # Install
 
 ```
